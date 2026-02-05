@@ -51,7 +51,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-zinc-500">
                 <Mail className="w-4 h-4 text-[#00ff94]" />
-                info@vav@gmail.com
+                vladzuk19845@gmail.com
               </li>
               <li className="flex items-center gap-2 text-zinc-500">
                 <Phone className="w-4 h-4 text-[#00ff94]" />
@@ -68,7 +68,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-zinc-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-600 text-sm">
-            © 2024 EasyMoveTrans. {t('footer.rights')}.
+            © 2024 EasyGoTrans.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-zinc-600 hover:text-[#00ff94] text-sm transition-colors">
