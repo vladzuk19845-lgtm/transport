@@ -23,7 +23,7 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # JWT Configuration
-JWT_SECRET = os.environ.get('JWT_SECRET', 'transportpro-secret-key-2024')
+JWT_SECRET = os.environ.get('JWT_SECRET', 'EasyGoTrans-secret-key-2024')
 JWT_ALGORITHM = "HS256"
 JWT_EXPIRATION_HOURS = 24
 
@@ -33,7 +33,7 @@ FONDY_MERCHANT_PASSWORD = os.environ.get('FONDY_MERCHANT_PASSWORD', 'test')
 FONDY_API_URL = "https://pay.fondy.eu/api"
 
 # Create the main app
-app = FastAPI(title="TransportPro API")
+app = FastAPI(title="EasyGoTrans API")
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
@@ -441,7 +441,7 @@ async def create_payment(payment_data: PaymentCreate, current_user: dict = Depen
         "merchant_id": int(FONDY_MERCHANT_ID),
         "amount": package["price"],
         "currency": "UAH",
-        "order_desc": f"TransportPro - {package['name']} subscription",
+        "order_desc": f"EasyGoTrans - {package['name']} subscription",
         "response_url": os.environ.get('FRONTEND_URL', 'http://localhost:3000') + "/payment/success",
         "server_callback_url": os.environ.get('BACKEND_URL', 'http://localhost:8001') + "/api/payments/webhook",
     }
@@ -555,7 +555,7 @@ async def get_stats():
 
 @api_router.get("/")
 async def root():
-    return {"message": "TransportPro API", "version": "1.0.0"}
+    return {"message": "EasyGoTrans API", "version": "1.0.0"}
 
 # Include the router in the main app
 app.include_router(api_router)

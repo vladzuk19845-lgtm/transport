@@ -3,8 +3,8 @@ import sys
 import json
 from datetime import datetime
 
-class TransportProAPITester:
-    def __init__(self, base_url="https://transportpro-4.preview.emergentagent.com/api"):
+class EasyGoTransAPITester:
+    def __init__(self, base_url="https://EasyGoTrans-4.preview.emergentagent.com/api"):
         self.base_url = base_url
         self.token = None
         self.user_id = None
@@ -191,7 +191,7 @@ class TransportProAPITester:
 
     def run_all_tests(self):
         """Run all API tests"""
-        print("🚀 Starting TransportPro API Tests")
+        print("🚀 Starting EasyGoTrans API Tests")
         print("=" * 50)
         
         # Basic endpoints
@@ -229,7 +229,7 @@ class TransportProAPITester:
             return 1
 
 def main():
-    tester = TransportProAPITester()
+    tester = EasyGoTransAPITester()
     return tester.run_all_tests()
 
 if __name__ == "__main__":

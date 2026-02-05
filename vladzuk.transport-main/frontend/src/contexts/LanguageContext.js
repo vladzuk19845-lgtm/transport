@@ -22,7 +22,7 @@ const translations = {
     'hero.stats.cities': 'Міст',
     
     // Features
-    'features.title': 'Чому обирають TransportPro',
+    'features.title': 'Чому обирають EasyGoTrans',
     'features.1.title': 'Швидкий пошук',
     'features.1.desc': 'Знайдіть потрібний транспорт за лічені секунди',
     'features.2.title': 'Перевірені водії',
@@ -129,7 +129,7 @@ const translations = {
     'hero.stats.cities': 'Cities',
     
     // Features
-    'features.title': 'Why Choose TransportPro',
+    'features.title': 'Why Choose EasyGoTrans',
     'features.1.title': 'Fast Search',
     'features.1.desc': 'Find the right transport in seconds',
     'features.2.title': 'Verified Drivers',
