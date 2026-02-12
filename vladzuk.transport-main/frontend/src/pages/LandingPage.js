@@ -238,7 +238,7 @@ export const LandingPage = () => {
                 Готові почати?
               </h2>
               <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-                Приєднуйтесь до EasyMoveTrans сьогодні та почніть заробляти на своєму транспорті
+                Приєднуйтесь до EasyTransGo сьогодні та почніть заробляти на своєму транспорті
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/register">
